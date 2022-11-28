@@ -1,0 +1,62 @@
+<form action="/add" method="post" style="
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 520px;
+    height: 311px;
+    background: linear-gradient(90deg, rgba(67, 56, 72, 0.4) 0%, rgba(149, 126, 144, 0.4) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+">
+    <label for="titulo" style="
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 135%;
+        letter-spacing: 0.22em;
+        color: white;
+    ">
+        TÍTULO
+    </label>
+    <input type="text" name="titulo" id="titulo" style="
+        width: 474px;
+        height: 56px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        border: 0;
+        outline: 0;
+    "/>
+    <label for="conteudo" style="
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 135%;
+        letter-spacing: 0.22em;
+        color: white;
+        border: 0;
+        outline: 0;
+    ">
+        CONTEÚDO
+    </label>
+    <textarea name="conteudo" id="conteudo" cols="30" rols="10" style="
+        width: 474px;
+        height: 56px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        resize: none;
+    "/></textarea>
+    <input type="submit" value="ENVIAR" style="
+        width: 106px;
+        height: 29px;
+        color: white;
+        background: #84C7AE;
+        border-bottom: 2px solid #567569;
+        border-radius: 2px;
+        border: 0;
+        outline: 0;
+    "/>
+</form>

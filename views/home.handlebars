@@ -1,0 +1,60 @@
+<h1 style="
+    align-self: flex-start;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: 0.375em;
+    margin-bottom: 65px;
+">
+    LISTA DE POSTS
+</h1>
+{{#each posts}}
+    <h2 style="
+    align-self: flex-start;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 135%;
+    letter-spacing: 0.375em;
+    ">
+        {{titulo}}
+    </h2>
+    <p style="
+        align-self: flex-start;
+        color: white;
+    ">
+        {{conteudo}}
+    </p>
+    <small style="
+        align-self: flex-start;
+        color: white;
+        margin-bottom: 15px;
+    ">
+        {{createdAt}}
+    </small>
+    <a href="/deletar/{{id}}" style="align-self: flex-start;">
+        <button style="
+            align-self: flex-start;
+            width: 106px;
+            height: 29px;
+            color: white;
+            background: #FC5C66;
+            border-bottom: 2px solid #C1434B;
+            border-radius: 2px;
+            margin: 25px 15px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        ">DELETAR</button>
+    </a>
+    <div style="
+        align-self: flex-start;
+        width: 800px;
+        height: 1px;
+        background-color: #CCB8C1;
+        margin-bottom: 25px;
+    "></div>
+{{/each}}
